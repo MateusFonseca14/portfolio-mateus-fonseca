@@ -26,6 +26,9 @@ header {
     align-items: center;
     gap: 20px;
     padding: 20px 40px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 header h1 {
@@ -136,10 +139,106 @@ nav ul a:hover {
     border: 5px solid #c4c4c4;
 }
 
+/* SECAO PROJETOS */
 
+/* SECAO SOBRE */
 
+.section-sobre {
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 64px;
+}
 
+.text-sobre {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.text-sobre h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.text-sobre p {
+    font-size: 1.05rem;
+    line-height: 1.5rem;   
+}
+
+.tecno-sobre {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tecno-sobre h3 {
+    color: #9072d4;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* SECAO-CONTATO */
+
+.section-contato {
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 48px 64px;
+}
+
+.text-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-contato h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text-contato h3 {
+    color: #9072d4;
+    font-size: 2rem;
+}
+
+.text-contato p {
+    font-size: 1.05rem;
+}
+
+.link-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.link-contato a  {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
 
 #btnCopiar {
-    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border: 4px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+#btnCopiar span {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #131313;
 }
