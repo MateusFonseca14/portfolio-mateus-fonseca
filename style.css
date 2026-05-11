@@ -9,3 +9,7 @@ h1, h2, h3, h4 {
 p, a {
     font-family: "Open Sans", sans-serif;
 }
+
+#btnCopiar {
+    border: 3px solid black;
+}
