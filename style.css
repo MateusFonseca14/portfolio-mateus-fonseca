@@ -207,8 +207,13 @@ nav ul a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1 / 1;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+}
+
+#projeto1 {
+    background: url(assets/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .button-projetos {
