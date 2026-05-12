@@ -154,7 +154,7 @@ nav ul a:hover {
 
 .section-projetos {
     background: #151515;
-    padding: 48px 64px 104px 48px;
+    padding: 48px 48px 104px 48px;
     margin-bottom: 1px;
 }
 
@@ -297,7 +297,7 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    padding: 48px 64px 104px 48px;
+    padding: 48px 48px 104px 48px;
 }
 
 .text-contato {
@@ -430,3 +430,70 @@ footer ul li {
 .footer-bottom p {
     color: #c4c4c4;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1280px) {
+    .section-sobre {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .text-sobre {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-hero {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 48px 32px;
+    }
+
+    .text-hero {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-projetos-card {
+        width: 450px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-sobre {
+        width: 100%;
+    }
+
+    .tecno-sobre {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .tecno-sobre h3 {
+        margin-bottom: 20px;
+    }
+
+    .section-contato {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .text-contato {
+        text-align: center;
+    }
+}
+
