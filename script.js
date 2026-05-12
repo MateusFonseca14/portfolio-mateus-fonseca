@@ -23,7 +23,7 @@ document.getElementById("btnCopiar").addEventListener("click", function () {
 
       // 2. Muda o fundo e a cor do texto/ícone
       btn.style.backgroundColor = "#9072d4"; // Verde (exemplo)
-      btn.style.paddingLeft = "12.1px"
+      btn.style.paddingLeft = "12.1px";
       btn.style.paddingRight = "12.1px";
       btn.style.color = "#383838"; // Branco
       btn.style.border = "4px";
