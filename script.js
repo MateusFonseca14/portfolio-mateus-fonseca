@@ -23,8 +23,8 @@ document.getElementById("btnCopiar").addEventListener("click", function () {
 
       // 2. Muda o fundo e a cor do texto/ícone
       btn.style.backgroundColor = "#9072d4"; // Verde (exemplo)
-      btn.style.paddingLeft = "12px"
-      btn.style.paddingRight = "11.9px";
+      btn.style.paddingLeft = "12.1px"
+      btn.style.paddingRight = "12.1px";
       btn.style.color = "#383838"; // Branco
       btn.style.border = "4px";
       btn.style.borderStyle = "solid";
@@ -42,7 +42,7 @@ document.getElementById("btnCopiar").addEventListener("click", function () {
         btn.style.borderStyle = borderstyleOriginal;
         btn.style.borderColor = bordercorOriginal;
         svgPath.style.fill = fillOriginal;
-      }, 2000);
+      }, 1500);
     })
     .catch((err) => {
       console.error("Erro ao copiar: ", err);
