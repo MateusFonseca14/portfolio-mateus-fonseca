@@ -8,6 +8,16 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Exemplo de 70px para o header */
+}
+
+body {
+    background-image: radial-gradient( #5627c1, #9072d4, white );
+    background-position: center top;
+}
+
 h1, h2, h3, h4 {
     font-family: "Montserrat", sans-serif;
 }
@@ -144,7 +154,8 @@ nav ul a:hover {
 
 .section-projetos {
     background: #151515;
-    padding: 48px 64px;
+    padding: 48px 64px 104px 48px;
+    margin-bottom: 1px;
 }
 
 .section-projetos h2 {
@@ -161,7 +172,7 @@ nav ul a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .section-projetos-card {

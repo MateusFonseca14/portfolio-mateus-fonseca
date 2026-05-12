@@ -1,5 +1,5 @@
 document.getElementById("btnCopiar").addEventListener("click", function () {
-  const email = "seu-email@exemplo.com";
+  const email = "devmateusfonseca@gmail.com";
   const btn = this;
   const svgPath = btn.querySelector("svg path"); // Seleciona o desenho do ícone
   const textoBtn = btn.querySelector("span");
