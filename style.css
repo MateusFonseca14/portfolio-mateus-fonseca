@@ -15,7 +15,6 @@ html {
 
 body {
     background-image: radial-gradient( #5627c1, #9072d4, white );
-    background-position: center top;
 }
 
 h1, h2, h3, h4 {
@@ -214,6 +213,7 @@ nav ul a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-margin-top: 40px;
 }
 
 .button-projetos {
