@@ -477,7 +477,11 @@ footer ul li {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 110px;
+    }
+    
     .text-sobre {
         width: 100%;
     }
@@ -502,3 +506,79 @@ footer ul li {
     }
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+    .text-sobre {
+        width: 100%;
+    }
+
+    .tecno-sobre {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .tecno-sobre h3 {
+        margin-bottom: 20px;
+    }
+
+    .section-contato {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .text-contato {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    html {
+        scroll-padding-top: 150px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .section-hero {
+        padding: 52px 32px;
+    }
+
+    .img-hero {
+        height: 350px;
+        width: 350px;
+    }
+
+    .section-hero h2 {
+        font-size: 2rem;
+    }
+
+    .section-hero h3 {
+        font-size: 1.8rem;
+    }
+
+    .section-projetos {
+        padding: 48px;
+    }
+
+    .section-sobre {
+        padding: 48px 36px;
+        gap: 0px;
+    }
+
+    .tecno-sobre {
+        margin-bottom: 0px;
+    }
+
+    .section-contato {
+        padding: 48px 48px 52px 48px;
+    }
+
+    footer {
+        padding: 48px 32px 0px 32px;
+    }
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+
+}
