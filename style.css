@@ -459,6 +459,7 @@ footer ul li {
     }
 
     .text-sobre {
+        margin-bottom: 40px;
         width: 75%;
     }
 }
@@ -470,10 +471,30 @@ footer ul li {
         padding: 48px 32px;
     }
 
+    .section-hero h2 {
+        font-size: 2rem;
+    }
+
+    .section-hero h3 {
+        font-size: 1.8rem;
+    }
+
     .text-hero {
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: 75%;
+    }
+
+    .section-projetos h2 {
+        font-size: 2.3rem;
+    }
+
+    .text-sobre h2 {
+        font-size: 2.3rem;
+    }
+
+    .text-contato h2 {
+        font-size: 2.3rem;
     }
 }
 
@@ -611,6 +632,10 @@ footer ul li {
         font-size: 1.8rem;
     }
 
+    .text-hero {
+        width: 100%;
+    }
+
     .section-sobre {
         padding: 48px 36px;
         gap: 0px;
@@ -660,6 +685,14 @@ footer ul li {
         width: 300px;
     }
 
+    .text-hero {
+        width: 100%;
+    }
+
+    .text-hero h2 {
+        font-size: 1.8rem;
+    }
+
     .text-hero a {
         padding: 5px;
         gap: 10px;
@@ -685,6 +718,16 @@ footer ul li {
         justify-content: center;
     }
 
+    .button-projetos {
+        gap: 15px;
+    }
+
+    .button-projetos a {
+        padding: 3px;
+        gap: 5px;
+
+    }
+
     .footer-container {
         flex-wrap: wrap;
         justify-content: center;
@@ -694,6 +737,15 @@ footer ul li {
 @media (max-width: 330px) and (orientation: portrait) {
     .section-projetos {
         padding: 48px 10px;
+    }
+
+    .button-projetos {
+        gap: 20px;
+    }
+
+    .button-projetos a {
+        padding: 5px;
+        gap: 10px;
     }
 
     .section-projetos-card p {
