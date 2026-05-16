@@ -579,6 +579,6 @@ footer ul li {
     }
 }
 
-@media (max-width: 500px) and (orientation: landscape) {
-
+@media (max-width: 400px) and (orientation: portrait) {
+    
 }
