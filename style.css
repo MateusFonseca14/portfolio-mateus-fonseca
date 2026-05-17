@@ -1,35 +1,49 @@
 @charset "UTF-8";
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+ 
+:root {
+    --cor-primaria: #9072d4;
+    --cor-secundaria: #5627c1;
+    --cor-secundaria-hover: #8f72d4bd;
+    --cor-bg-1: #0e0e0e;  /* mais escuro — header/footer */
+    --cor-bg-2: #131313;  /* medio — hero/contato */
+    --cor-bg-3: #151515;  /* menos escuro — projetos/sobre */
+    --cor-branco: #ffffff;
+    --cor-borda: #c4c4c4;
+    --cor-borda-hover: #a1a1a1;
+    --cor-hover-bg: #bbbbbb;
+    --cor-texto-escuro: #383838;
+}
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Exemplo de 70px para o header */
+  scroll-padding-top: 70px;
 }
-
+ 
 body {
-    background-image: radial-gradient( #5627c1, #9072d4, white );
+    background-image: radial-gradient( var(--cor-secundaria), var(--cor-primaria), var(--cor-branco) );
 }
-
+ 
 h1, h2, h3, h4 {
     font-family: "Montserrat", sans-serif;
 }
-
+ 
 p, a, span {
-    color: white;
+    color: var(--cor-branco);
     font-family: "Open Sans", sans-serif;
 }
-
+ 
 /* HEADER */
-
+ 
 header {
-    background-color: #0e0e0e;
+    background-color: var(--cor-bg-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,31 +53,31 @@ header {
     position: -webkit-sticky;
     top: 0;
 }
-
+ 
 header h1 {
-    color: #9072d4;
+    color: var(--cor-primaria);
 }
-
+ 
 nav ul {
     display: flex;
     gap: 20px;
     list-style-type: none;
 }
-
+ 
 nav ul a {
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
 }
-
+ 
 nav ul a:hover {
-    color: #8f72d4bd;
+    color: var(--cor-secundaria-hover);
 }
-
+ 
 /* SECAO HERO */
-
+ 
 .section-hero {
-    background: #131313;
+    background: var(--cor-bg-2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,73 +85,73 @@ nav ul a:hover {
     padding: 48px 64px;
     min-height: 70vh;
 }
-
+ 
 .section-hero h2 {
-    color: white;
+    color: var(--cor-branco);
     font-size: 2.5em;
 }
-
+ 
 .section-hero h3 {
-    color: #9072d4;
+    color: var(--cor-primaria);
     font-size: 2rem;
 }
-
+ 
 .section-hero p {
     font-size: 1.1rem;
     font-weight: 500;
 }
-
+ 
 .text-hero {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
 }
-
+ 
 .text-hero .button-hero {
     display: flex;
     gap: 20px;
     margin-top: 40px;
 }
-
+ 
 .text-hero a {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 10px;
-    background: white;
-    color: #131313;
-    border: 4px solid #c4c4c4;
+    background: var(--cor-branco);
+    color: var(--cor-bg-2);
+    border: 4px solid var(--cor-borda);
     border-radius: 8px;
     width: max-content;
     text-decoration: none;
     font-weight: 600;
 }
-
+ 
 .text-hero a:hover {
-    background: #bbbbbb;
-    color: #383838;
-    border: 4px solid #a1a1a1;
+    background: var(--cor-hover-bg);
+    color: var(--cor-texto-escuro);
+    border: 4px solid var(--cor-borda-hover);
 }
-
+ 
 .img-hero {
     display: flex;
-    background: #5627c1;
-    border: 5px solid #9072d4;
+    background: var(--cor-secundaria);
+    border: 5px solid var(--cor-primaria);
     border-radius: 10px;
     padding: 10px;
     width: 450px;
     height: 450px;
 }
-
+ 
 .sobre-img-hero {
-    border: 10px solid #151515;
+    border: 10px solid var(--cor-bg-3);
     border-radius: 20px;
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
 }
-
+ 
 .img {
     background-image: url(assets/pixel-art-mateus-400px.jpg);
     background-position: center;
@@ -146,25 +160,25 @@ nav ul a:hover {
     width: 100%;
     margin: 10px;
     border-radius: 50%;
-    border: 5px solid #c4c4c4;
+    border: 5px solid var(--cor-borda);
 }
-
+ 
 /* SECAO PROJETOS */
-
+ 
 .section-projetos {
-    background: #151515;
+    background: var(--cor-bg-3);
     padding: 48px 48px 104px 48px;
     margin-bottom: 1px;
 }
-
+ 
 .section-projetos h2 {
-    color: white;
+    color: var(--cor-branco);
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 44px;
 }
-
+ 
 .container-section-projetos {
     display: flex;
     flex-direction: row;
@@ -173,7 +187,7 @@ nav ul a:hover {
     align-items: center;
     gap: 40px;
 }
-
+ 
 .section-projetos-card {
     display: flex;
     flex-direction: column;
@@ -181,26 +195,26 @@ nav ul a:hover {
     align-items: center;
     gap: 20px;
     width: 350px;
-    background: #131313;
-    border: 4px solid #9072d4;
+    background: var(--cor-bg-2);
+    border: 4px solid var(--cor-primaria);
     border-radius: 8px;
 }
-
+ 
 .section-projetos-card h3 {
-    color: #9072d4;
+    color: var(--cor-primaria);
 }
-
+ 
 .section-projetos-card p {
-    color: white;
+    color: var(--cor-branco);
     font-size: 1.05rem;
     padding: 0px 24px 4px 24px;
     text-align: center;
 }
-
+ 
 .section-projetos-box-img {
     width: 100%;
 }
-
+ 
 .section-projetos-img {
     background-image: url(assets/projeto-img.jpg);
     background-position: center;
@@ -208,7 +222,7 @@ nav ul a:hover {
     background-size: cover;
     aspect-ratio: 1 / 1;
 }
-
+ 
 #projeto1 {
     background: url(assets/1.jpg);
     background-position: center;
@@ -216,17 +230,17 @@ nav ul a:hover {
     background-size: cover;
     scroll-margin-top: 40px;
 }
-
+ 
 .button-projetos {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
-
+ 
 .button-projetos a {
-    background: white;
+    background: var(--cor-branco);
     color: black;
-    border: 4px solid #c4c4c4;
+    border: 4px solid var(--cor-borda);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -235,17 +249,17 @@ nav ul a:hover {
     text-decoration: none;
     font-weight: 600;
 }
-
+ 
 .button-projetos a:hover {
-    background: #bbbbbb;
-    color: #383838;
-    border: 4px solid #a1a1a1;
+    background: var(--cor-hover-bg);
+    color: var(--cor-texto-escuro);
+    border: 4px solid var(--cor-borda-hover);
 }
-
+ 
 /* SECAO SOBRE */
-
+ 
 .section-sobre {
-    background: #151515;
+    background: var(--cor-bg-3);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -253,24 +267,24 @@ nav ul a:hover {
     gap: 100px;
     padding: 48px 64px;
 }
-
+ 
 .text-sobre {
     margin-bottom: 60px;
     width: 40%;
 }
-
+ 
 .text-sobre h2 {
-    color: white;
+    color: var(--cor-branco);
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 40px;
 }
-
+ 
 .text-sobre p {
     font-size: 1.05rem;
     line-height: 1.5rem;   
 }
-
+ 
 .tecno-sobre {
     display: flex;
     align-items: end;
@@ -278,61 +292,61 @@ nav ul a:hover {
     text-align: center;
     margin-bottom: 40px;
 }
-
+ 
 .section-sobre h3 {
-    color: #9072d4;
+    color: var(--cor-primaria);
     font-size: 2rem;
     margin-bottom: 40px;
 }
-
+ 
 .tecno-sobre p {
     font-weight: 600;
 }
-
+ 
 .tecno-sobre svg {
-    fill: #5627c1;
+    fill: var(--cor-secundaria);
 }
-
-
-
+ 
+ 
+ 
 /* SECAO-CONTATO */
-
+ 
 .section-contato {
-    background: #131313;
+    background: var(--cor-bg-2);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     padding: 48px 48px 104px 48px;
 }
-
+ 
 .text-contato {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
+ 
 .text-contato h2 {
-    color: white;
+    color: var(--cor-branco);
     font-size: 2.5rem;
     font-weight: 600;
 }
-
+ 
 .text-contato h3 {
-    color: #9072d4;
+    color: var(--cor-primaria);
     font-size: 2rem;
 }
-
+ 
 .text-contato p {
     font-size: 1.05rem;
 }
-
+ 
 .link-contato {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
+ 
 .link-contato a  {
     font-weight: 600;
     display: flex;
@@ -340,212 +354,213 @@ nav ul a:hover {
     gap: 15px;
     text-decoration: none;
 }
-
+ 
 .link-contato a:hover {
-    color: #9072d4;
+    color: var(--cor-primaria);
 }
-
+ 
 .link-contato .svg-contato {
-    fill: #9072d4;
+    fill: var(--cor-primaria);
 }
-
+ 
 #btnCopiar {
+    background-color: var(--cor-branco);
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 15px 20px;
-    border: 4px solid #c4c4c4;
+    border: 4px solid var(--cor-borda);
     border-radius: 8px;
 }
-
+ 
 #btnCopiar:hover {
     cursor: pointer;
-    background: #bbbbbb;
-    color: #383838;
-    border: 4px solid #a1a1a1;
+    background: var(--cor-hover-bg);
+    color: var(--cor-texto-escuro);
+    border: 4px solid var(--cor-borda-hover);
 }
-
+ 
 #btnCopiar span {
     font-size: 1.05rem;
     font-weight: 600;
-    color: #131313;
+    color: var(--cor-bg-2);
 }
-
+ 
 /* FOOTER */
-
+ 
 footer {
-    color: white;
-    background: #0e0e0e;
+    color: var(--cor-branco);
+    background: var(--cor-bg-1);
     padding: 48px 64px 0px 64px;
 }
-
+ 
 footer h3 {
-    color: #9072d4;
+    color: var(--cor-primaria);
 }
-
+ 
 footer ul {
     list-style-type: none;
 }
-
+ 
 footer a {
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 500;
 }
-
+ 
 footer a:hover {
-    color: #8f72d4bd;
+    color: var(--cor-secundaria-hover);
 }
-
+ 
 footer ul li {
     margin-top: 15px;
 }
-
+ 
 .footer-container {
     display: flex;
     justify-content: space-around;
     gap: 40px;
     margin-bottom: 48px;
 }
-
+ 
 .link-footer {
     display: flex;
     flex-direction: column;
 }
-
+ 
 .link-footer h4 {
-    color: #5627c1;
+    color: var(--cor-secundaria);
 }
-
+ 
 .projetos-footer {
     display: flex;
     flex-direction: column;
 }
-
+ 
 .projetos-footer h4 {
-    color: #5627c1;
+    color: var(--cor-secundaria);
 }
-
+ 
 .footer-bottom {
     font-size: 0.9rem;
     text-align: center;
-    border-top: 1px solid #383838;
+    border-top: 1px solid var(--cor-texto-escuro);
     padding: 28px;
 }
-
+ 
 .footer-bottom p {
-    color: #c4c4c4;
+    color: var(--cor-borda);
 }
-
+ 
 /* RESPONSIVIDADE */
-
+ 
 @media (max-width: 1280px) and (orientation: portrait) {
     .section-sobre {
         flex-direction: column;
         gap: 25px;
         text-align: center;
     }
-
+ 
     .text-sobre {
         width: 75%;
     }
 }
-
+ 
 @media (max-width: 1280px) and (orientation: landscape) {
     .section-sobre {
         flex-direction: column;
         gap: 25px;
         text-align: center;
     }
-
+ 
     .text-sobre {
         margin-bottom: 40px;
         width: 75%;
     }
 }
-
+ 
 @media (max-width: 1024px) {
     .section-hero {
         flex-direction: column-reverse;
         gap: 50px;
         padding: 48px 32px;
     }
-
+ 
     .section-hero h2 {
         font-size: 2rem;
     }
-
+ 
     .section-hero h3 {
         font-size: 1.8rem;
     }
-
+ 
     .text-hero {
         align-items: center;
         text-align: center;
         width: 75%;
     }
-
+ 
     .section-projetos h2 {
         font-size: 2.3rem;
     }
-
+ 
     .text-sobre h2 {
         font-size: 2.3rem;
     }
-
+ 
     .text-contato h2 {
         font-size: 2.3rem;
     }
 }
-
+ 
 @media (max-width: 900px) {
     .section-projetos-card {
         width: 450px;
     }
 }
-
+ 
 @media (max-width: 950px) and (orientation: landscape) {
     .img-hero {
         height: 350px;
         width: 350px;
     }
-
+ 
     .section-hero h2 {
         font-size: 2rem;
     }
-
+ 
     .section-hero h3 {
         font-size: 1.8rem;
     }
-
+ 
     .section-projetos {
         padding: 48px;
     }
-
+ 
     .section-projetos-card {
         width: 350px;
     }
-
+ 
     .text-sobre {
         margin-bottom: 20px;
     }
-
+ 
     .tecno-sobre {
         margin-bottom: 20px;
     }
-
+ 
     .section-contato {
         padding: 48px 48px 68px 48px;
     }
 }
-
+ 
 @media (max-width: 800px) {
     header {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-
+ 
 @media (max-width: 768px) and (orientation: portrait) {
     html {
         scroll-padding-top: 110px;
@@ -554,27 +569,27 @@ footer ul li {
     .text-sobre {
         width: 100%;
     }
-
+ 
     .tecno-sobre {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-
+ 
     .section-sobre h3 {
         margin-bottom: 20px;
     }
-
+ 
     .section-contato {
         flex-direction: column;
         gap: 50px;
     }
-
+ 
     .text-contato {
         text-align: center;
     }
 }
-
+ 
 @media (max-width: 768px) and (orientation: landscape) {
     html {
         scroll-padding-top: 110px;
@@ -583,99 +598,99 @@ footer ul li {
     .section-sobre {
         gap: 25px;
     }
-
+ 
     .text-sobre {
         width: 100%;
     }
-
+ 
     .tecno-sobre {
         align-items: center;
     }
-
+ 
     .section-sobre h3 {
         margin-bottom: 20px;
     }
-
+ 
     .section-contato {
         flex-direction: column;
         gap: 50px;
     }
-
+ 
     .text-contato {
         text-align: center;
     }
 }
-
+ 
 @media (max-width: 500px) and (orientation: portrait) {
     html {
         scroll-padding-top: 150px;
     }
-
+ 
     header {
         text-align: center;
     }
-
+ 
     .section-hero {
         padding: 52px 32px;
     }
-
+ 
     .img-hero {
         height: 350px;
         width: 350px;
     }
-
+ 
     .section-hero h2 {
         font-size: 2rem;
     }
-
+ 
     .section-hero h3 {
         font-size: 1.8rem;
     }
-
+ 
     .text-hero {
         width: 100%;
     }
-
+ 
     .section-sobre {
         padding: 48px 36px;
         gap: 0px;
     }
-
+ 
     .tecno-sobre {
         margin-bottom: 0px;
     }
-
+ 
     .section-contato {
         padding: 48px 48px 52px 48px;
     }
-
+ 
     .section-projetos {
         padding: 48px 20px;
     }
-
+ 
     .button-projetos {
         flex-wrap: wrap;
         justify-content: center;
     }
-
+ 
     .button-projetos a {
         gap: 10px;
     }
-
+ 
     footer {
         padding: 48px 32px 0px 32px;
     }
 }
-
+ 
 @media (max-width: 400px) and (orientation: portrait) {
     .section-hero {
         gap: 40px;
     }
-
+ 
     .section-hero h2 {
         font-size: 2rem;
     }
-
+ 
     .section-hero h3 {
         font-size: 1.7rem;
     }
@@ -684,70 +699,70 @@ footer ul li {
         height: 300px;
         width: 300px;
     }
-
+ 
     .text-hero {
         width: 100%;
     }
-
+ 
     .text-hero h2 {
         font-size: 1.8rem;
     }
-
+ 
     .text-hero a {
         padding: 5px;
         gap: 10px;
     }
-
+ 
     .text-hero .button-hero {
         margin-top: 30px;
     }
-
+ 
     .text-sobre {
         margin-bottom: 50px;
     }
-
+ 
     footer {
         padding: 48px 20px 0px 20px;
     }
 }
-
+ 
 @media (max-width: 375px) and (orientation: portrait) {
     .text-hero .button-hero {
         margin-top: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
-
+ 
     .button-projetos {
         gap: 15px;
     }
-
+ 
     .button-projetos a {
         padding: 3px;
         gap: 5px;
-
+ 
     }
-
+ 
     .footer-container {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
-
+ 
 @media (max-width: 330px) and (orientation: portrait) {
     .section-projetos {
         padding: 48px 10px;
     }
-
+ 
     .button-projetos {
         gap: 20px;
     }
-
+ 
     .button-projetos a {
         padding: 5px;
         gap: 10px;
     }
-
+ 
     .section-projetos-card p {
         padding: 0px 18px 4px 18px;
     }
